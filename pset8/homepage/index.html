@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        <link href="styles_index.css" rel="stylesheet">
+        <title>CSS generator</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="index.html">CSS</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+        
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                <a class="nav-link" href="border.html">Border<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                <a class="nav-link" href="gradient.html">Gradient<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                <a class="nav-link" href="shadows.html">Shadows<span class="sr-only">(current)</span></a>
+                </li>
+            </ul>
+            </div>
+        </nav>
+        <div class="container">
+            <h1>CSS</h1>
+            <p>
+                This is a project for CS50 problem set numer 8. The goal of this webpage is to allow user
+                preview css code and make it easier to adjust it for user's needs. It's an attempt to recreate 
+                some functionality of https://html-css-js.com/css/. To create first page - border.html I used box
+                model, for the second and third - gradient.html and shadows.html I used flexbox model.
+            </p>
+
+            <hr>
+            
+            <h3>Border editor</h3>
+            <p>Allows user to edit different properties of border for example:
+                <br>
+                <code>border-radius: 26px 30px 28px 17px;</code>
+                <br>
+                <code>border: 2px dashed rgb(68, 96, 124);</code>
+            </p>
+
+            <h3>Gradient editor</h3>
+            <p>Allows user to adjust gradient color and style for example:
+                <br>
+                <code>background-image: linear-gradient(to right, #e66465 0%, #3f87a6 50%, #9198e5 100%);</code>
+            </p>
+
+            <h3>Text shadow editor</h3>
+            <p>Allows user create shadow for text and adjust it for example:
+                <br>
+                <code>text-shadow: rgba(206, 89, 55, 0.69) -3px 16px 2px, rgba(206, 89, 55, 0.69) -3px 13px 2px, rgba(206, 89, 55, 0.69) -3px 9px 2px, rgba(206, 89, 55, 0.69) -3px 7px 2px, rgba(206, 89, 55, 0.69) -3px 3px 2px, rgba(206, 89, 55, 0.69) -3px 16px 2px;</code>
+            </p>
+        </div>
+        <script src="main.js"></script>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    </body>
+</html>

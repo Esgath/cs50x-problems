@@ -1,0 +1,150 @@
+:root {
+    --base-color: #44607c;
+}
+
+.root-flexbox-container {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+}
+.flexbox-container {
+    width: 50%;
+    flex-direction: column;
+    margin-top: 3em;
+}
+#code-block {
+    border-radius: 10px 10px 10px 10px;
+    border: 2px solid rgb(68, 96, 124);
+    padding: 1.5em;
+    margin-left: 3em;
+    margin-bottom: 3em;
+    width: 55%;
+    align-self: flex-start;
+}
+/* Sliders options */
+#options {
+    width: 40%;
+    border-radius: 22px 22px 22px 22px;
+    border: 2px solid rgb(68, 96, 124);
+}
+.slider-container {
+    width: 100%;
+    margin-top: 0.8em;
+    margin-bottom: 0.8em;
+    
+}
+.value-box {
+    display: inline-block;
+    width: 8%;
+    border: 1px solid var(--base-color);
+    text-align: center;
+}
+.slider-label {
+    text-align: right;
+    width: 20%;
+}
+label[for=shadow-color], .color-label {
+    text-align: right;
+    width: 30%;
+}
+.slider {
+    width: 60%;
+}
+#shadow-color, #text-color, #background-color {
+    width: 20%;
+    height: 2em;
+}
+#color-options-container {
+    width: 100%;
+}
+/*  */
+
+/* Preview Text */
+#preview-text {
+    font-size: 4em;
+    color: rgb(51, 51, 51);
+    text-align: center;
+    width: 100%;
+}
+#preview-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 55%;
+    background-color: #ffffff;
+    border-radius: 22px;
+    margin-left: 3em;
+}
+/*  */
+
+/* Additional shadows container */
+#additional-shadows-container {
+    border-radius: 10px 10px 10px 10px;
+    border: 2px solid rgb(68, 96, 124);
+    flex-direction: column;
+    padding: 1.5em;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+    margin-bottom: 3em;
+}
+.saved-shadow-container {
+    border-radius: 22px 22px 22px 22px;
+    border: 2px solid rgb(68, 96, 124);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.6em;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+
+}
+.delete-button {
+    background-color: dodgerblue;
+    border-radius:15px;
+    flex-shrink: 0;
+    padding: 0.2em;
+    margin: 0.1em 0.1em;
+    cursor: pointer;
+    text-shadow: none;
+}
+.saved-shadow-container:first-child .delete-button{
+    display: none;
+}
+.delete-button:hover {
+    background-color: royalblue;
+}
+#add-new-shadow {
+    font-size: 1.3em;
+    margin: 0.3em;
+}
+/*  */
+
+@media (max-width: 1200px) {
+    .root-flexbox-container {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    /* Containers */
+    #options, #preview-container, #additional-shadows-container, #code-block {
+        width: 90%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .flexbox-container {
+        margin-top: 3em;
+        margin-bottom: 3em;
+    }
+    #code-block {
+        margin: auto;
+        margin-bottom: 1em 
+    }
+    /*  */
+}
+
+@media (max-width: 375px) {
+    #preview-text {
+        font-size: 3em;
+    }
+}

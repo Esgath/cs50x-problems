@@ -1,0 +1,4 @@
+{
+    "sqltools.useNodeRuntime": true,
+    "python.pythonPath": "/home/asd/Projects/edX/Cpractice/cs50-venv/bin/python3"
+}

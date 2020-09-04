@@ -1,0 +1,46 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Index
+{% endblock  %}
+
+{% block main %}
+    <table class="table table-hover table-bordered">
+        <thead class="thead-dark">
+            <tr>
+                <th>Balance</th>
+                <th>Grand total</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>{{ balance }}</td>
+                <td>{{ grand_total }}</td>
+            </tr>
+        </tbody>
+    </table>
+    
+    <table class="table table-hover table-bordered">
+        <thead class="thead-dark">
+            <tr>
+                <th>Symbol</th>
+                <th>Number of shares</th>
+                <th>Current price</th>
+                <th>Total value</th>
+            </tr>
+        </thead>
+        
+        <tbody>
+            {% for share in shares %}
+            <tr>
+                <td>{{ share['symbol'] }}</td>
+                <td>{{ share['quantity'] }}</td>
+                <td>{{ share['current_price'] }}</td>
+                <td>{{ share['total_value'] }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+        
+    </table>
+
+{% endblock  %}

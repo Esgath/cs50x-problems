@@ -1,0 +1,20 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    {{ symbol }}
+{% endblock  %}
+
+{% block main %}
+    <table class="table table-hover table-bordered">
+        <tr>
+            <th>Name</th>
+            <th>Price</th>
+            <th>Symbol</th>
+        </tr>
+        <tr>
+            <td>{{ api_response['name'] }}</td>
+            <td>{{ api_response['price'] }}</td>
+            <td>{{ api_response['symbol'] }}</td>
+        </tr>
+    </table>
+{% endblock  %}

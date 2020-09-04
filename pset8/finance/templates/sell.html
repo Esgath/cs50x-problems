@@ -1,0 +1,22 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Sell
+{% endblock  %}
+
+{% block main %}
+    <form action="/sell" method="POST">
+        <div class="form-group">
+            <select name="symbol" id="shares" class="custom-select form-control">
+                <option value="" selected disabled>Symbol</option>
+                {% for share in shares_list %}
+                    <option value="{{ share['symbol'] }}">{{ share['symbol'] }} ({{ share['quantity'] }})</option>
+                {% endfor %}
+            </select>
+        </div>
+        <div class="form-group">
+            <input autocomplete="off" autofocus class="form-control" name="num_of_shares" placeholder="Number of shares" type="number">
+        </div>
+        <button class="btn btn-primary" type="submit">Sell</button>
+    </form>
+{% endblock  %}

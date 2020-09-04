@@ -1,0 +1,117 @@
+/* Border.html */
+.code-block-border-box {
+    float: right;
+    border: 2px solid #44607c;
+    text-align: left;
+    width: 33%;
+    margin-top: 2.5em;
+    height: 10em;
+    padding: 20px;
+
+}
+
+input[type=range] {
+    width: 50%;
+    margin-top: 1em;
+}
+
+div.slider-container span{
+    display: inline-block;
+    width: 2em;
+    height: 1.8em;
+    text-align: center;
+    border: 1px solid slategray;
+}
+
+h3 {
+    margin-top: 1em;
+}
+
+#code-block-radius, #code-block-border {
+    margin: auto;
+}
+
+.border-styles {
+    margin: 1em;
+    width: 75%;
+}
+#color-picker-container{
+    float: right;
+}
+
+/* BORDER STYLE BOXES */
+.box {
+    /* width: 5em; */
+    text-align: center;
+    display: inline-block;
+    margin-right: 10px;
+    margin-top: 10px;
+    background-color: #ebebe6;
+    width: 8em;
+}
+
+#solid-box {
+    border: 4px solid #44607c;
+}
+
+#dotted-box {
+    border: 4px dotted #44607c;
+}
+
+#dashed-box {
+    border: 4px dashed #44607c;
+}
+
+#double-box {
+    border: 4px double #44607c;
+}
+
+#groove-box {
+    border: 4px groove #44607c;
+}
+
+#ridge-box {
+    border: 4px ridge #44607c;
+}
+
+#inset-box {
+    border: 4px inset #44607c;
+}
+
+#outset-box {
+    border: 4px outset #44607c;
+}
+
+#hidden-box {
+    border: 4px hidden #44607c;
+}
+
+#none-box {
+    border: 4px none #44607c;
+}
+
+/* For lower resolution devices */
+@media (max-width: 1024px) and (min-height: 1366px) {
+    .code-block-border-box {
+        float: none;
+        margin-left: 1em;
+        margin-bottom: 2em;
+        width: 65%;
+    }
+    
+    #color-picker-container{
+        float: none;
+    }
+}
+@media (max-width: 993px) {
+    .code-block-border-box {
+        float: none;
+        margin-left: 1em;
+        margin-bottom: 2em;
+        width: 65%;
+    }
+
+    #color-picker-container{
+        float: none;
+    }
+}

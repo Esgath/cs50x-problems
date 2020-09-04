@@ -1,0 +1,233 @@
+:root {
+    --base-color: #44607c;
+}
+
+.root-flexbox-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.flexbox-container {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    align-items: center;
+    margin-top: 2.5em;
+}
+
+#label-transition {
+    margin-top: 2em;
+}
+
+#code-block {
+    padding: 1em;
+    border: 2px solid var(--base-color);
+    margin-bottom: 1em;
+}
+
+/* Item wrapper and it's items */
+.item-wrapper {
+    width: 100%;
+    display: flex;
+}
+#middle-check {
+    width: 10%;
+    height: 1.25em;
+}
+#middle-transition {
+    width: 90%;
+    height: 1.25em;
+}
+/*  */
+/* Nested container and it's items*/
+.flexbox-container-nested {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+#color-range {
+    width: 100%;
+    height: 2.5em;
+    border: 2px solid var(--base-color);
+    background-image: linear-gradient(to right, #e66465 0%, #3f87a6 50%, #9198e5 100%);
+}
+/*  */
+
+/* Colors container and it's items */
+.flexbox-container-colors {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.color {
+    margin-top: 1em;
+    border: 2px solid var(--base-color);
+    width: 15%;
+}
+
+/*  */
+
+/* Flexbox container for gradient styles */
+#flexbox-container-styles {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.gradient-style-box {
+    margin-top: 2em;
+    padding: 2em;
+    margin: 2em 0.5em 0em 0.5em;
+    border: 2px solid #9bbfe4;
+}
+
+.gradient-style-box:hover {
+    border: 2px solid var(--base-color);
+}
+
+.gradient-style-select {
+    border: 2px solid var(--base-color);
+}
+
+#left-to-right {
+    background: linear-gradient(to right, var(--base-color) 25%, #ffffff 75%)
+}
+
+#top-to-bottom {
+    background: linear-gradient(var(--base-color) 25%, #ffffff 75%);
+}
+
+#diagonal-descending {
+    background: linear-gradient(135deg, var(--base-color) 25%, #ffffff 75%);
+}
+
+#diagonal-ascending {
+    background: linear-gradient(45deg, var(--base-color) 25%, #ffffff 75%);
+}
+
+#radial {
+    background: radial-gradient(at center center, var(--base-color) 25%, #ffffff 75%);
+}
+/*  */
+
+#gradient-box {
+    background-image: linear-gradient(to right, #e66465 0%, #3f87a6 50%, #9198e5 100%);
+    width: 80%;
+    height: 20em;
+    border: 2px solid var(--base-color);
+}
+
+@media (max-width: 1024px) {
+    .root-flexbox-container {
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    body, html, .root-flexbox-container, .container {
+        height: 100%;
+    }
+
+    .flexbox-container {
+        flex-wrap: wrap;
+        align-items: center;
+        width: 80%;
+    }
+
+    #flexbox-container-styles {
+        justify-content: space-evenly;
+    }
+
+    .gradient-style-box {
+        width: 10%;
+        height: 5em;
+        padding: 1.5em;
+        margin: 1em 2em 0em 2em;
+    }
+    
+    #gradient-box {
+        width: 90%;
+        height: 20em;
+    }   
+}
+
+@media (max-width: 878px) {
+    body, html, .root-flexbox-container, .container {
+        height: auto;
+    }
+    .root-flexbox-container {
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    #flexbox-container-styles {
+        justify-content: space-around;
+    }
+
+    .gradient-style-box {
+        width: 5%;
+        height: 2em;
+        padding: 1.5em;
+        margin: 1em 0.5em 0em 0.5em;
+    }
+    
+    #gradient-box {
+        width: 100%;
+        height: 15em;
+    }
+}
+
+@media (max-width: 767px) {
+    .root-flexbox-container {
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .flexbox-container {
+        width: 100%
+    }
+
+    #flexbox-container-styles {
+        justify-content: space-around;
+    }
+
+    .gradient-style-box {
+        width: 5%;
+        height: 2em;
+        padding: 1.5em;
+        margin: 1em 0.5em 0em 0.5em;
+    }
+    
+    #gradient-box {
+        width: 100%;
+        height: 11em;
+    }
+}
+
+@media (max-width: 280px) {
+    .root-flexbox-container {
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    #flexbox-container-styles {
+        justify-content: space-around;
+    }
+
+    .gradient-style-box {
+        padding: 1em;
+        margin: 1em 0.5em 0em 0.5em;
+    }
+    
+    #gradient-box {
+        width: 100%;
+        height: 7em;
+    }
+}

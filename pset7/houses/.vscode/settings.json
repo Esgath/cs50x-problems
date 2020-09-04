@@ -1,0 +1,12 @@
+{
+    "python.pythonPath": "/home/asd/Projects/edX/Cpractice/cs50-venv/bin",
+    "sqltools.useNodeRuntime": true,
+    "sqltools.connections": [
+        {
+            "name": "SQLite",
+            "driver": "SQLite",
+            "database": "/home/asd/Projects/edX/Python/pset7/houses/students.db", // if you use relative paths, the base folder is the currently open folder (or workspace).
+            "connectionTimeout": 15
+          }
+    ]
+}
